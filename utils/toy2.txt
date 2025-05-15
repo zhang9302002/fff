@@ -1,0 +1,1108 @@
+text=<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<|vision_start|><|video_pad|><|vision_end|>Describe this video.<|im_end|>
+<|im_start|>assistant
+
+text2=<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<|vision_start|><|video_pad|><|vision_end|>Describe this video.<|im_end|>
+<|im_start|>assistant
+Best option: (
+In forward, video_embeds=torch.Size([480, 3584]), inputs_embeds=torch.Size([1, 509, 3584])
+====================================================================================================================================
+                                                            Kernel Shape           Output Shape  \
+Layer                                                                                             
+0_model.Embedding_embed_tokens                            [3584, 152064]         [1, 509, 3584]   
+1_visual.patch_embed.Conv3d_proj                    [3, 1280, 2, 14, 14]  [1920, 1280, 1, 1, 1]   
+2_visual.VisionRotaryEmbedding_rotary_pos_emb                          -               [20, 20]   
+3_visual.blocks.0.LayerNorm_norm1                                 [1280]           [1920, 1280]   
+4_visual.blocks.0.attn.Linear_qkv                           [1280, 3840]           [1920, 3840]   
+5_visual.blocks.0.attn.Linear_proj                          [1280, 1280]           [1920, 1280]   
+6_visual.blocks.0.LayerNorm_norm2                                 [1280]           [1920, 1280]   
+7_visual.blocks.0.mlp.Linear_fc1                            [1280, 5120]           [1920, 5120]   
+8_visual.blocks.0.mlp.QuickGELUActivation_act                          -           [1920, 5120]   
+9_visual.blocks.0.mlp.Linear_fc2                            [5120, 1280]           [1920, 1280]   
+10_visual.blocks.1.LayerNorm_norm1                                [1280]           [1920, 1280]   
+11_visual.blocks.1.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+12_visual.blocks.1.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+13_visual.blocks.1.LayerNorm_norm2                                [1280]           [1920, 1280]   
+14_visual.blocks.1.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+15_visual.blocks.1.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+16_visual.blocks.1.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+17_visual.blocks.2.LayerNorm_norm1                                [1280]           [1920, 1280]   
+18_visual.blocks.2.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+19_visual.blocks.2.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+20_visual.blocks.2.LayerNorm_norm2                                [1280]           [1920, 1280]   
+21_visual.blocks.2.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+22_visual.blocks.2.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+23_visual.blocks.2.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+24_visual.blocks.3.LayerNorm_norm1                                [1280]           [1920, 1280]   
+25_visual.blocks.3.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+26_visual.blocks.3.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+27_visual.blocks.3.LayerNorm_norm2                                [1280]           [1920, 1280]   
+28_visual.blocks.3.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+29_visual.blocks.3.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+30_visual.blocks.3.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+31_visual.blocks.4.LayerNorm_norm1                                [1280]           [1920, 1280]   
+32_visual.blocks.4.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+33_visual.blocks.4.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+34_visual.blocks.4.LayerNorm_norm2                                [1280]           [1920, 1280]   
+35_visual.blocks.4.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+36_visual.blocks.4.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+37_visual.blocks.4.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+38_visual.blocks.5.LayerNorm_norm1                                [1280]           [1920, 1280]   
+39_visual.blocks.5.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+40_visual.blocks.5.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+41_visual.blocks.5.LayerNorm_norm2                                [1280]           [1920, 1280]   
+42_visual.blocks.5.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+43_visual.blocks.5.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+44_visual.blocks.5.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+45_visual.blocks.6.LayerNorm_norm1                                [1280]           [1920, 1280]   
+46_visual.blocks.6.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+47_visual.blocks.6.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+48_visual.blocks.6.LayerNorm_norm2                                [1280]           [1920, 1280]   
+49_visual.blocks.6.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+50_visual.blocks.6.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+51_visual.blocks.6.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+52_visual.blocks.7.LayerNorm_norm1                                [1280]           [1920, 1280]   
+53_visual.blocks.7.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+54_visual.blocks.7.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+55_visual.blocks.7.LayerNorm_norm2                                [1280]           [1920, 1280]   
+56_visual.blocks.7.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+57_visual.blocks.7.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+58_visual.blocks.7.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+59_visual.blocks.8.LayerNorm_norm1                                [1280]           [1920, 1280]   
+60_visual.blocks.8.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+61_visual.blocks.8.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+62_visual.blocks.8.LayerNorm_norm2                                [1280]           [1920, 1280]   
+63_visual.blocks.8.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+64_visual.blocks.8.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+65_visual.blocks.8.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+66_visual.blocks.9.LayerNorm_norm1                                [1280]           [1920, 1280]   
+67_visual.blocks.9.attn.Linear_qkv                          [1280, 3840]           [1920, 3840]   
+68_visual.blocks.9.attn.Linear_proj                         [1280, 1280]           [1920, 1280]   
+69_visual.blocks.9.LayerNorm_norm2                                [1280]           [1920, 1280]   
+70_visual.blocks.9.mlp.Linear_fc1                           [1280, 5120]           [1920, 5120]   
+71_visual.blocks.9.mlp.QuickGELUActivation_act                         -           [1920, 5120]   
+72_visual.blocks.9.mlp.Linear_fc2                           [5120, 1280]           [1920, 1280]   
+73_visual.blocks.10.LayerNorm_norm1                               [1280]           [1920, 1280]   
+74_visual.blocks.10.attn.Linear_qkv                         [1280, 3840]           [1920, 3840]   
+75_visual.blocks.10.attn.Linear_proj                        [1280, 1280]           [1920, 1280]   
+76_visual.blocks.10.LayerNorm_norm2                               [1280]           [1920, 1280]   
+77_visual.blocks.10.mlp.Linear_fc1                          [1280, 5120]           [1920, 5120]   
+78_visual.blocks.10.mlp.QuickGELUActivation_act                        -           [1920, 5120]   
+79_visual.blocks.10.mlp.Linear_fc2                          [5120, 1280]           [1920, 1280]   
+80_visual.blocks.11.LayerNorm_norm1                               [1280]           [1920, 1280]   
+81_visual.blocks.11.attn.Linear_qkv                         [1280, 3840]           [1920, 3840]   
+82_visual.blocks.11.attn.Linear_proj                        [1280, 1280]           [1920, 1280]   
+83_visual.blocks.11.LayerNorm_norm2                               [1280]           [1920, 1280]   
+84_visual.blocks.11.mlp.Linear_fc1                          [1280, 5120]           [1920, 5120]   
+85_visual.blocks.11.mlp.QuickGELUActivation_act                        -           [1920, 5120]   
+86_visual.blocks.11.mlp.Linear_fc2                          [5120, 1280]           [1920, 1280]   
+87_visual.blocks.12.LayerNorm_norm1                               [1280]           [1920, 1280]   
+88_visual.blocks.12.attn.Linear_qkv                         [1280, 3840]           [1920, 3840]   
+89_visual.blocks.12.attn.Linear_proj                        [1280, 1280]           [1920, 1280]   
+90_visual.blocks.12.LayerNorm_norm2                               [1280]           [1920, 1280]   
+91_visual.blocks.12.mlp.Linear_fc1                          [1280, 5120]           [1920, 5120]   
+92_visual.blocks.12.mlp.QuickGELUActivation_act                        -           [1920, 5120]   
+93_visual.blocks.12.mlp.Linear_fc2                          [5120, 1280]           [1920, 1280]   
+94_visual.blocks.13.LayerNorm_norm1                               [1280]           [1920, 1280]   
+95_visual.blocks.13.attn.Linear_qkv                         [1280, 3840]           [1920, 3840]   
+96_visual.blocks.13.attn.Linear_proj                        [1280, 1280]           [1920, 1280]   
+97_visual.blocks.13.LayerNorm_norm2                               [1280]           [1920, 1280]   
+98_visual.blocks.13.mlp.Linear_fc1                          [1280, 5120]           [1920, 5120]   
+99_visual.blocks.13.mlp.QuickGELUActivation_act                        -           [1920, 5120]   
+100_visual.blocks.13.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+101_visual.blocks.14.LayerNorm_norm1                              [1280]           [1920, 1280]   
+102_visual.blocks.14.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+103_visual.blocks.14.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+104_visual.blocks.14.LayerNorm_norm2                              [1280]           [1920, 1280]   
+105_visual.blocks.14.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+106_visual.blocks.14.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+107_visual.blocks.14.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+108_visual.blocks.15.LayerNorm_norm1                              [1280]           [1920, 1280]   
+109_visual.blocks.15.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+110_visual.blocks.15.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+111_visual.blocks.15.LayerNorm_norm2                              [1280]           [1920, 1280]   
+112_visual.blocks.15.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+113_visual.blocks.15.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+114_visual.blocks.15.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+115_visual.blocks.16.LayerNorm_norm1                              [1280]           [1920, 1280]   
+116_visual.blocks.16.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+117_visual.blocks.16.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+118_visual.blocks.16.LayerNorm_norm2                              [1280]           [1920, 1280]   
+119_visual.blocks.16.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+120_visual.blocks.16.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+121_visual.blocks.16.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+122_visual.blocks.17.LayerNorm_norm1                              [1280]           [1920, 1280]   
+123_visual.blocks.17.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+124_visual.blocks.17.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+125_visual.blocks.17.LayerNorm_norm2                              [1280]           [1920, 1280]   
+126_visual.blocks.17.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+127_visual.blocks.17.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+128_visual.blocks.17.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+129_visual.blocks.18.LayerNorm_norm1                              [1280]           [1920, 1280]   
+130_visual.blocks.18.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+131_visual.blocks.18.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+132_visual.blocks.18.LayerNorm_norm2                              [1280]           [1920, 1280]   
+133_visual.blocks.18.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+134_visual.blocks.18.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+135_visual.blocks.18.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+136_visual.blocks.19.LayerNorm_norm1                              [1280]           [1920, 1280]   
+137_visual.blocks.19.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+138_visual.blocks.19.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+139_visual.blocks.19.LayerNorm_norm2                              [1280]           [1920, 1280]   
+140_visual.blocks.19.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+141_visual.blocks.19.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+142_visual.blocks.19.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+143_visual.blocks.20.LayerNorm_norm1                              [1280]           [1920, 1280]   
+144_visual.blocks.20.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+145_visual.blocks.20.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+146_visual.blocks.20.LayerNorm_norm2                              [1280]           [1920, 1280]   
+147_visual.blocks.20.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+148_visual.blocks.20.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+149_visual.blocks.20.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+150_visual.blocks.21.LayerNorm_norm1                              [1280]           [1920, 1280]   
+151_visual.blocks.21.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+152_visual.blocks.21.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+153_visual.blocks.21.LayerNorm_norm2                              [1280]           [1920, 1280]   
+154_visual.blocks.21.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+155_visual.blocks.21.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+156_visual.blocks.21.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+157_visual.blocks.22.LayerNorm_norm1                              [1280]           [1920, 1280]   
+158_visual.blocks.22.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+159_visual.blocks.22.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+160_visual.blocks.22.LayerNorm_norm2                              [1280]           [1920, 1280]   
+161_visual.blocks.22.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+162_visual.blocks.22.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+163_visual.blocks.22.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+164_visual.blocks.23.LayerNorm_norm1                              [1280]           [1920, 1280]   
+165_visual.blocks.23.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+166_visual.blocks.23.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+167_visual.blocks.23.LayerNorm_norm2                              [1280]           [1920, 1280]   
+168_visual.blocks.23.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+169_visual.blocks.23.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+170_visual.blocks.23.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+171_visual.blocks.24.LayerNorm_norm1                              [1280]           [1920, 1280]   
+172_visual.blocks.24.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+173_visual.blocks.24.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+174_visual.blocks.24.LayerNorm_norm2                              [1280]           [1920, 1280]   
+175_visual.blocks.24.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+176_visual.blocks.24.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+177_visual.blocks.24.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+178_visual.blocks.25.LayerNorm_norm1                              [1280]           [1920, 1280]   
+179_visual.blocks.25.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+180_visual.blocks.25.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+181_visual.blocks.25.LayerNorm_norm2                              [1280]           [1920, 1280]   
+182_visual.blocks.25.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+183_visual.blocks.25.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+184_visual.blocks.25.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+185_visual.blocks.26.LayerNorm_norm1                              [1280]           [1920, 1280]   
+186_visual.blocks.26.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+187_visual.blocks.26.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+188_visual.blocks.26.LayerNorm_norm2                              [1280]           [1920, 1280]   
+189_visual.blocks.26.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+190_visual.blocks.26.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+191_visual.blocks.26.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+192_visual.blocks.27.LayerNorm_norm1                              [1280]           [1920, 1280]   
+193_visual.blocks.27.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+194_visual.blocks.27.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+195_visual.blocks.27.LayerNorm_norm2                              [1280]           [1920, 1280]   
+196_visual.blocks.27.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+197_visual.blocks.27.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+198_visual.blocks.27.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+199_visual.blocks.28.LayerNorm_norm1                              [1280]           [1920, 1280]   
+200_visual.blocks.28.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+201_visual.blocks.28.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+202_visual.blocks.28.LayerNorm_norm2                              [1280]           [1920, 1280]   
+203_visual.blocks.28.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+204_visual.blocks.28.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+205_visual.blocks.28.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+206_visual.blocks.29.LayerNorm_norm1                              [1280]           [1920, 1280]   
+207_visual.blocks.29.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+208_visual.blocks.29.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+209_visual.blocks.29.LayerNorm_norm2                              [1280]           [1920, 1280]   
+210_visual.blocks.29.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+211_visual.blocks.29.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+212_visual.blocks.29.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+213_visual.blocks.30.LayerNorm_norm1                              [1280]           [1920, 1280]   
+214_visual.blocks.30.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+215_visual.blocks.30.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+216_visual.blocks.30.LayerNorm_norm2                              [1280]           [1920, 1280]   
+217_visual.blocks.30.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+218_visual.blocks.30.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+219_visual.blocks.30.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+220_visual.blocks.31.LayerNorm_norm1                              [1280]           [1920, 1280]   
+221_visual.blocks.31.attn.Linear_qkv                        [1280, 3840]           [1920, 3840]   
+222_visual.blocks.31.attn.Linear_proj                       [1280, 1280]           [1920, 1280]   
+223_visual.blocks.31.LayerNorm_norm2                              [1280]           [1920, 1280]   
+224_visual.blocks.31.mlp.Linear_fc1                         [1280, 5120]           [1920, 5120]   
+225_visual.blocks.31.mlp.QuickGELUActivation_act                       -           [1920, 5120]   
+226_visual.blocks.31.mlp.Linear_fc2                         [5120, 1280]           [1920, 1280]   
+227_visual.merger.LayerNorm_ln_q                                  [1280]           [1920, 1280]   
+228_visual.merger.mlp.Linear_0                              [5120, 5120]            [480, 5120]   
+229_visual.merger.mlp.GELU_1                                           -            [480, 5120]   
+230_visual.merger.mlp.Linear_2                              [5120, 3584]            [480, 3584]   
+231_model.layers.0.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+232_model.layers.0.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+233_model.layers.0.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+234_model.layers.0.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+235_model.layers.0.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+236_model.layers.0.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+237_model.layers.0.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+238_model.layers.0.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+239_model.layers.0.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+240_model.layers.0.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+241_model.layers.0.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+242_model.layers.1.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+243_model.layers.1.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+244_model.layers.1.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+245_model.layers.1.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+246_model.layers.1.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+247_model.layers.1.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+248_model.layers.1.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+249_model.layers.1.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+250_model.layers.1.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+251_model.layers.1.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+252_model.layers.1.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+253_model.layers.2.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+254_model.layers.2.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+255_model.layers.2.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+256_model.layers.2.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+257_model.layers.2.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+258_model.layers.2.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+259_model.layers.2.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+260_model.layers.2.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+261_model.layers.2.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+262_model.layers.2.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+263_model.layers.2.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+264_model.layers.3.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+265_model.layers.3.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+266_model.layers.3.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+267_model.layers.3.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+268_model.layers.3.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+269_model.layers.3.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+270_model.layers.3.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+271_model.layers.3.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+272_model.layers.3.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+273_model.layers.3.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+274_model.layers.3.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+275_model.layers.4.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+276_model.layers.4.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+277_model.layers.4.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+278_model.layers.4.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+279_model.layers.4.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+280_model.layers.4.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+281_model.layers.4.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+282_model.layers.4.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+283_model.layers.4.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+284_model.layers.4.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+285_model.layers.4.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+286_model.layers.5.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+287_model.layers.5.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+288_model.layers.5.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+289_model.layers.5.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+290_model.layers.5.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+291_model.layers.5.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+292_model.layers.5.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+293_model.layers.5.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+294_model.layers.5.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+295_model.layers.5.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+296_model.layers.5.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+297_model.layers.6.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+298_model.layers.6.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+299_model.layers.6.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+300_model.layers.6.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+301_model.layers.6.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+302_model.layers.6.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+303_model.layers.6.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+304_model.layers.6.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+305_model.layers.6.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+306_model.layers.6.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+307_model.layers.6.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+308_model.layers.7.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+309_model.layers.7.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+310_model.layers.7.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+311_model.layers.7.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+312_model.layers.7.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+313_model.layers.7.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+314_model.layers.7.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+315_model.layers.7.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+316_model.layers.7.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+317_model.layers.7.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+318_model.layers.7.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+319_model.layers.8.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+320_model.layers.8.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+321_model.layers.8.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+322_model.layers.8.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+323_model.layers.8.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+324_model.layers.8.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+325_model.layers.8.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+326_model.layers.8.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+327_model.layers.8.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+328_model.layers.8.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+329_model.layers.8.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+330_model.layers.9.Qwen2RMSNorm_input_layernorm                   [3584]         [1, 509, 3584]   
+331_model.layers.9.self_attn.Linear_q_proj                  [3584, 3584]         [1, 509, 3584]   
+332_model.layers.9.self_attn.Linear_k_proj                   [3584, 512]          [1, 509, 512]   
+333_model.layers.9.self_attn.Linear_v_proj                   [3584, 512]          [1, 509, 512]   
+334_model.layers.9.self_attn.Qwen2RotaryEmbeddi...                     -             [509, 128]   
+335_model.layers.9.self_attn.Linear_o_proj                  [3584, 3584]         [1, 509, 3584]   
+336_model.layers.9.Qwen2RMSNorm_post_attention_...                [3584]         [1, 509, 3584]   
+337_model.layers.9.mlp.Linear_gate_proj                    [3584, 18944]        [1, 509, 18944]   
+338_model.layers.9.mlp.SiLU_act_fn                                     -        [1, 509, 18944]   
+339_model.layers.9.mlp.Linear_up_proj                      [3584, 18944]        [1, 509, 18944]   
+340_model.layers.9.mlp.Linear_down_proj                    [18944, 3584]         [1, 509, 3584]   
+341_model.layers.10.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+342_model.layers.10.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+343_model.layers.10.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+344_model.layers.10.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+345_model.layers.10.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+346_model.layers.10.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+347_model.layers.10.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+348_model.layers.10.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+349_model.layers.10.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+350_model.layers.10.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+351_model.layers.10.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+352_model.layers.11.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+353_model.layers.11.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+354_model.layers.11.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+355_model.layers.11.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+356_model.layers.11.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+357_model.layers.11.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+358_model.layers.11.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+359_model.layers.11.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+360_model.layers.11.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+361_model.layers.11.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+362_model.layers.11.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+363_model.layers.12.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+364_model.layers.12.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+365_model.layers.12.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+366_model.layers.12.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+367_model.layers.12.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+368_model.layers.12.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+369_model.layers.12.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+370_model.layers.12.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+371_model.layers.12.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+372_model.layers.12.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+373_model.layers.12.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+374_model.layers.13.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+375_model.layers.13.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+376_model.layers.13.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+377_model.layers.13.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+378_model.layers.13.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+379_model.layers.13.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+380_model.layers.13.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+381_model.layers.13.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+382_model.layers.13.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+383_model.layers.13.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+384_model.layers.13.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+385_model.layers.14.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+386_model.layers.14.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+387_model.layers.14.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+388_model.layers.14.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+389_model.layers.14.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+390_model.layers.14.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+391_model.layers.14.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+392_model.layers.14.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+393_model.layers.14.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+394_model.layers.14.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+395_model.layers.14.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+396_model.layers.15.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+397_model.layers.15.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+398_model.layers.15.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+399_model.layers.15.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+400_model.layers.15.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+401_model.layers.15.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+402_model.layers.15.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+403_model.layers.15.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+404_model.layers.15.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+405_model.layers.15.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+406_model.layers.15.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+407_model.layers.16.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+408_model.layers.16.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+409_model.layers.16.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+410_model.layers.16.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+411_model.layers.16.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+412_model.layers.16.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+413_model.layers.16.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+414_model.layers.16.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+415_model.layers.16.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+416_model.layers.16.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+417_model.layers.16.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+418_model.layers.17.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+419_model.layers.17.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+420_model.layers.17.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+421_model.layers.17.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+422_model.layers.17.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+423_model.layers.17.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+424_model.layers.17.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+425_model.layers.17.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+426_model.layers.17.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+427_model.layers.17.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+428_model.layers.17.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+429_model.layers.18.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+430_model.layers.18.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+431_model.layers.18.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+432_model.layers.18.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+433_model.layers.18.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+434_model.layers.18.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+435_model.layers.18.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+436_model.layers.18.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+437_model.layers.18.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+438_model.layers.18.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+439_model.layers.18.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+440_model.layers.19.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+441_model.layers.19.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+442_model.layers.19.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+443_model.layers.19.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+444_model.layers.19.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+445_model.layers.19.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+446_model.layers.19.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+447_model.layers.19.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+448_model.layers.19.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+449_model.layers.19.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+450_model.layers.19.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+451_model.layers.20.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+452_model.layers.20.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+453_model.layers.20.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+454_model.layers.20.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+455_model.layers.20.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+456_model.layers.20.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+457_model.layers.20.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+458_model.layers.20.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+459_model.layers.20.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+460_model.layers.20.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+461_model.layers.20.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+462_model.layers.21.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+463_model.layers.21.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+464_model.layers.21.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+465_model.layers.21.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+466_model.layers.21.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+467_model.layers.21.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+468_model.layers.21.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+469_model.layers.21.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+470_model.layers.21.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+471_model.layers.21.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+472_model.layers.21.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+473_model.layers.22.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+474_model.layers.22.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+475_model.layers.22.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+476_model.layers.22.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+477_model.layers.22.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+478_model.layers.22.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+479_model.layers.22.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+480_model.layers.22.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+481_model.layers.22.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+482_model.layers.22.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+483_model.layers.22.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+484_model.layers.23.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+485_model.layers.23.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+486_model.layers.23.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+487_model.layers.23.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+488_model.layers.23.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+489_model.layers.23.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+490_model.layers.23.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+491_model.layers.23.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+492_model.layers.23.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+493_model.layers.23.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+494_model.layers.23.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+495_model.layers.24.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+496_model.layers.24.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+497_model.layers.24.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+498_model.layers.24.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+499_model.layers.24.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+500_model.layers.24.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+501_model.layers.24.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+502_model.layers.24.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+503_model.layers.24.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+504_model.layers.24.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+505_model.layers.24.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+506_model.layers.25.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+507_model.layers.25.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+508_model.layers.25.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+509_model.layers.25.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+510_model.layers.25.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+511_model.layers.25.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+512_model.layers.25.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+513_model.layers.25.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+514_model.layers.25.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+515_model.layers.25.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+516_model.layers.25.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+517_model.layers.26.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+518_model.layers.26.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+519_model.layers.26.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+520_model.layers.26.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+521_model.layers.26.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+522_model.layers.26.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+523_model.layers.26.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+524_model.layers.26.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+525_model.layers.26.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+526_model.layers.26.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+527_model.layers.26.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+528_model.layers.27.Qwen2RMSNorm_input_layernorm                  [3584]         [1, 509, 3584]   
+529_model.layers.27.self_attn.Linear_q_proj                 [3584, 3584]         [1, 509, 3584]   
+530_model.layers.27.self_attn.Linear_k_proj                  [3584, 512]          [1, 509, 512]   
+531_model.layers.27.self_attn.Linear_v_proj                  [3584, 512]          [1, 509, 512]   
+532_model.layers.27.self_attn.Qwen2RotaryEmbedd...                     -             [509, 128]   
+533_model.layers.27.self_attn.Linear_o_proj                 [3584, 3584]         [1, 509, 3584]   
+534_model.layers.27.Qwen2RMSNorm_post_attention...                [3584]         [1, 509, 3584]   
+535_model.layers.27.mlp.Linear_gate_proj                   [3584, 18944]        [1, 509, 18944]   
+536_model.layers.27.mlp.SiLU_act_fn                                    -        [1, 509, 18944]   
+537_model.layers.27.mlp.Linear_up_proj                     [3584, 18944]        [1, 509, 18944]   
+538_model.layers.27.mlp.Linear_down_proj                   [18944, 3584]         [1, 509, 3584]   
+539_model.Qwen2RMSNorm_norm                                       [3584]         [1, 509, 3584]   
+540_lm_head                                               [3584, 152064]       [1, 509, 152064]   
+
+                                                         Params    Mult-Adds  
+Layer                                                                         
+0_model.Embedding_embed_tokens                      544.997376M  544.997376M  
+1_visual.patch_embed.Conv3d_proj                       1.50528M     1.50528M  
+2_visual.VisionRotaryEmbedding_rotary_pos_emb                 -            -  
+3_visual.blocks.0.LayerNorm_norm1                         2.56k        1.28k  
+4_visual.blocks.0.attn.Linear_qkv                      4.91904M      4.9152M  
+5_visual.blocks.0.attn.Linear_proj                     1.63968M      1.6384M  
+6_visual.blocks.0.LayerNorm_norm2                         2.56k        1.28k  
+7_visual.blocks.0.mlp.Linear_fc1                       6.55872M      6.5536M  
+8_visual.blocks.0.mlp.QuickGELUActivation_act                 -            -  
+9_visual.blocks.0.mlp.Linear_fc2                       6.55488M      6.5536M  
+10_visual.blocks.1.LayerNorm_norm1                        2.56k        1.28k  
+11_visual.blocks.1.attn.Linear_qkv                     4.91904M      4.9152M  
+12_visual.blocks.1.attn.Linear_proj                    1.63968M      1.6384M  
+13_visual.blocks.1.LayerNorm_norm2                        2.56k        1.28k  
+14_visual.blocks.1.mlp.Linear_fc1                      6.55872M      6.5536M  
+15_visual.blocks.1.mlp.QuickGELUActivation_act                -            -  
+16_visual.blocks.1.mlp.Linear_fc2                      6.55488M      6.5536M  
+17_visual.blocks.2.LayerNorm_norm1                        2.56k        1.28k  
+18_visual.blocks.2.attn.Linear_qkv                     4.91904M      4.9152M  
+19_visual.blocks.2.attn.Linear_proj                    1.63968M      1.6384M  
+20_visual.blocks.2.LayerNorm_norm2                        2.56k        1.28k  
+21_visual.blocks.2.mlp.Linear_fc1                      6.55872M      6.5536M  
+22_visual.blocks.2.mlp.QuickGELUActivation_act                -            -  
+23_visual.blocks.2.mlp.Linear_fc2                      6.55488M      6.5536M  
+24_visual.blocks.3.LayerNorm_norm1                        2.56k        1.28k  
+25_visual.blocks.3.attn.Linear_qkv                     4.91904M      4.9152M  
+26_visual.blocks.3.attn.Linear_proj                    1.63968M      1.6384M  
+27_visual.blocks.3.LayerNorm_norm2                        2.56k        1.28k  
+28_visual.blocks.3.mlp.Linear_fc1                      6.55872M      6.5536M  
+29_visual.blocks.3.mlp.QuickGELUActivation_act                -            -  
+30_visual.blocks.3.mlp.Linear_fc2                      6.55488M      6.5536M  
+31_visual.blocks.4.LayerNorm_norm1                        2.56k        1.28k  
+32_visual.blocks.4.attn.Linear_qkv                     4.91904M      4.9152M  
+33_visual.blocks.4.attn.Linear_proj                    1.63968M      1.6384M  
+34_visual.blocks.4.LayerNorm_norm2                        2.56k        1.28k  
+35_visual.blocks.4.mlp.Linear_fc1                      6.55872M      6.5536M  
+36_visual.blocks.4.mlp.QuickGELUActivation_act                -            -  
+37_visual.blocks.4.mlp.Linear_fc2                      6.55488M      6.5536M  
+38_visual.blocks.5.LayerNorm_norm1                        2.56k        1.28k  
+39_visual.blocks.5.attn.Linear_qkv                     4.91904M      4.9152M  
+40_visual.blocks.5.attn.Linear_proj                    1.63968M      1.6384M  
+41_visual.blocks.5.LayerNorm_norm2                        2.56k        1.28k  
+42_visual.blocks.5.mlp.Linear_fc1                      6.55872M      6.5536M  
+43_visual.blocks.5.mlp.QuickGELUActivation_act                -            -  
+44_visual.blocks.5.mlp.Linear_fc2                      6.55488M      6.5536M  
+45_visual.blocks.6.LayerNorm_norm1                        2.56k        1.28k  
+46_visual.blocks.6.attn.Linear_qkv                     4.91904M      4.9152M  
+47_visual.blocks.6.attn.Linear_proj                    1.63968M      1.6384M  
+48_visual.blocks.6.LayerNorm_norm2                        2.56k        1.28k  
+49_visual.blocks.6.mlp.Linear_fc1                      6.55872M      6.5536M  
+50_visual.blocks.6.mlp.QuickGELUActivation_act                -            -  
+51_visual.blocks.6.mlp.Linear_fc2                      6.55488M      6.5536M  
+52_visual.blocks.7.LayerNorm_norm1                        2.56k        1.28k  
+53_visual.blocks.7.attn.Linear_qkv                     4.91904M      4.9152M  
+54_visual.blocks.7.attn.Linear_proj                    1.63968M      1.6384M  
+55_visual.blocks.7.LayerNorm_norm2                        2.56k        1.28k  
+56_visual.blocks.7.mlp.Linear_fc1                      6.55872M      6.5536M  
+57_visual.blocks.7.mlp.QuickGELUActivation_act                -            -  
+58_visual.blocks.7.mlp.Linear_fc2                      6.55488M      6.5536M  
+59_visual.blocks.8.LayerNorm_norm1                        2.56k        1.28k  
+60_visual.blocks.8.attn.Linear_qkv                     4.91904M      4.9152M  
+61_visual.blocks.8.attn.Linear_proj                    1.63968M      1.6384M  
+62_visual.blocks.8.LayerNorm_norm2                        2.56k        1.28k  
+63_visual.blocks.8.mlp.Linear_fc1                      6.55872M      6.5536M  
+64_visual.blocks.8.mlp.QuickGELUActivation_act                -            -  
+65_visual.blocks.8.mlp.Linear_fc2                      6.55488M      6.5536M  
+66_visual.blocks.9.LayerNorm_norm1                        2.56k        1.28k  
+67_visual.blocks.9.attn.Linear_qkv                     4.91904M      4.9152M  
+68_visual.blocks.9.attn.Linear_proj                    1.63968M      1.6384M  
+69_visual.blocks.9.LayerNorm_norm2                        2.56k        1.28k  
+70_visual.blocks.9.mlp.Linear_fc1                      6.55872M      6.5536M  
+71_visual.blocks.9.mlp.QuickGELUActivation_act                -            -  
+72_visual.blocks.9.mlp.Linear_fc2                      6.55488M      6.5536M  
+73_visual.blocks.10.LayerNorm_norm1                       2.56k        1.28k  
+74_visual.blocks.10.attn.Linear_qkv                    4.91904M      4.9152M  
+75_visual.blocks.10.attn.Linear_proj                   1.63968M      1.6384M  
+76_visual.blocks.10.LayerNorm_norm2                       2.56k        1.28k  
+77_visual.blocks.10.mlp.Linear_fc1                     6.55872M      6.5536M  
+78_visual.blocks.10.mlp.QuickGELUActivation_act               -            -  
+79_visual.blocks.10.mlp.Linear_fc2                     6.55488M      6.5536M  
+80_visual.blocks.11.LayerNorm_norm1                       2.56k        1.28k  
+81_visual.blocks.11.attn.Linear_qkv                    4.91904M      4.9152M  
+82_visual.blocks.11.attn.Linear_proj                   1.63968M      1.6384M  
+83_visual.blocks.11.LayerNorm_norm2                       2.56k        1.28k  
+84_visual.blocks.11.mlp.Linear_fc1                     6.55872M      6.5536M  
+85_visual.blocks.11.mlp.QuickGELUActivation_act               -            -  
+86_visual.blocks.11.mlp.Linear_fc2                     6.55488M      6.5536M  
+87_visual.blocks.12.LayerNorm_norm1                       2.56k        1.28k  
+88_visual.blocks.12.attn.Linear_qkv                    4.91904M      4.9152M  
+89_visual.blocks.12.attn.Linear_proj                   1.63968M      1.6384M  
+90_visual.blocks.12.LayerNorm_norm2                       2.56k        1.28k  
+91_visual.blocks.12.mlp.Linear_fc1                     6.55872M      6.5536M  
+92_visual.blocks.12.mlp.QuickGELUActivation_act               -            -  
+93_visual.blocks.12.mlp.Linear_fc2                     6.55488M      6.5536M  
+94_visual.blocks.13.LayerNorm_norm1                       2.56k        1.28k  
+95_visual.blocks.13.attn.Linear_qkv                    4.91904M      4.9152M  
+96_visual.blocks.13.attn.Linear_proj                   1.63968M      1.6384M  
+97_visual.blocks.13.LayerNorm_norm2                       2.56k        1.28k  
+98_visual.blocks.13.mlp.Linear_fc1                     6.55872M      6.5536M  
+99_visual.blocks.13.mlp.QuickGELUActivation_act               -            -  
+100_visual.blocks.13.mlp.Linear_fc2                    6.55488M      6.5536M  
+101_visual.blocks.14.LayerNorm_norm1                      2.56k        1.28k  
+102_visual.blocks.14.attn.Linear_qkv                   4.91904M      4.9152M  
+103_visual.blocks.14.attn.Linear_proj                  1.63968M      1.6384M  
+104_visual.blocks.14.LayerNorm_norm2                      2.56k        1.28k  
+105_visual.blocks.14.mlp.Linear_fc1                    6.55872M      6.5536M  
+106_visual.blocks.14.mlp.QuickGELUActivation_act              -            -  
+107_visual.blocks.14.mlp.Linear_fc2                    6.55488M      6.5536M  
+108_visual.blocks.15.LayerNorm_norm1                      2.56k        1.28k  
+109_visual.blocks.15.attn.Linear_qkv                   4.91904M      4.9152M  
+110_visual.blocks.15.attn.Linear_proj                  1.63968M      1.6384M  
+111_visual.blocks.15.LayerNorm_norm2                      2.56k        1.28k  
+112_visual.blocks.15.mlp.Linear_fc1                    6.55872M      6.5536M  
+113_visual.blocks.15.mlp.QuickGELUActivation_act              -            -  
+114_visual.blocks.15.mlp.Linear_fc2                    6.55488M      6.5536M  
+115_visual.blocks.16.LayerNorm_norm1                      2.56k        1.28k  
+116_visual.blocks.16.attn.Linear_qkv                   4.91904M      4.9152M  
+117_visual.blocks.16.attn.Linear_proj                  1.63968M      1.6384M  
+118_visual.blocks.16.LayerNorm_norm2                      2.56k        1.28k  
+119_visual.blocks.16.mlp.Linear_fc1                    6.55872M      6.5536M  
+120_visual.blocks.16.mlp.QuickGELUActivation_act              -            -  
+121_visual.blocks.16.mlp.Linear_fc2                    6.55488M      6.5536M  
+122_visual.blocks.17.LayerNorm_norm1                      2.56k        1.28k  
+123_visual.blocks.17.attn.Linear_qkv                   4.91904M      4.9152M  
+124_visual.blocks.17.attn.Linear_proj                  1.63968M      1.6384M  
+125_visual.blocks.17.LayerNorm_norm2                      2.56k        1.28k  
+126_visual.blocks.17.mlp.Linear_fc1                    6.55872M      6.5536M  
+127_visual.blocks.17.mlp.QuickGELUActivation_act              -            -  
+128_visual.blocks.17.mlp.Linear_fc2                    6.55488M      6.5536M  
+129_visual.blocks.18.LayerNorm_norm1                      2.56k        1.28k  
+130_visual.blocks.18.attn.Linear_qkv                   4.91904M      4.9152M  
+131_visual.blocks.18.attn.Linear_proj                  1.63968M      1.6384M  
+132_visual.blocks.18.LayerNorm_norm2                      2.56k        1.28k  
+133_visual.blocks.18.mlp.Linear_fc1                    6.55872M      6.5536M  
+134_visual.blocks.18.mlp.QuickGELUActivation_act              -            -  
+135_visual.blocks.18.mlp.Linear_fc2                    6.55488M      6.5536M  
+136_visual.blocks.19.LayerNorm_norm1                      2.56k        1.28k  
+137_visual.blocks.19.attn.Linear_qkv                   4.91904M      4.9152M  
+138_visual.blocks.19.attn.Linear_proj                  1.63968M      1.6384M  
+139_visual.blocks.19.LayerNorm_norm2                      2.56k        1.28k  
+140_visual.blocks.19.mlp.Linear_fc1                    6.55872M      6.5536M  
+141_visual.blocks.19.mlp.QuickGELUActivation_act              -            -  
+142_visual.blocks.19.mlp.Linear_fc2                    6.55488M      6.5536M  
+143_visual.blocks.20.LayerNorm_norm1                      2.56k        1.28k  
+144_visual.blocks.20.attn.Linear_qkv                   4.91904M      4.9152M  
+145_visual.blocks.20.attn.Linear_proj                  1.63968M      1.6384M  
+146_visual.blocks.20.LayerNorm_norm2                      2.56k        1.28k  
+147_visual.blocks.20.mlp.Linear_fc1                    6.55872M      6.5536M  
+148_visual.blocks.20.mlp.QuickGELUActivation_act              -            -  
+149_visual.blocks.20.mlp.Linear_fc2                    6.55488M      6.5536M  
+150_visual.blocks.21.LayerNorm_norm1                      2.56k        1.28k  
+151_visual.blocks.21.attn.Linear_qkv                   4.91904M      4.9152M  
+152_visual.blocks.21.attn.Linear_proj                  1.63968M      1.6384M  
+153_visual.blocks.21.LayerNorm_norm2                      2.56k        1.28k  
+154_visual.blocks.21.mlp.Linear_fc1                    6.55872M      6.5536M  
+155_visual.blocks.21.mlp.QuickGELUActivation_act              -            -  
+156_visual.blocks.21.mlp.Linear_fc2                    6.55488M      6.5536M  
+157_visual.blocks.22.LayerNorm_norm1                      2.56k        1.28k  
+158_visual.blocks.22.attn.Linear_qkv                   4.91904M      4.9152M  
+159_visual.blocks.22.attn.Linear_proj                  1.63968M      1.6384M  
+160_visual.blocks.22.LayerNorm_norm2                      2.56k        1.28k  
+161_visual.blocks.22.mlp.Linear_fc1                    6.55872M      6.5536M  
+162_visual.blocks.22.mlp.QuickGELUActivation_act              -            -  
+163_visual.blocks.22.mlp.Linear_fc2                    6.55488M      6.5536M  
+164_visual.blocks.23.LayerNorm_norm1                      2.56k        1.28k  
+165_visual.blocks.23.attn.Linear_qkv                   4.91904M      4.9152M  
+166_visual.blocks.23.attn.Linear_proj                  1.63968M      1.6384M  
+167_visual.blocks.23.LayerNorm_norm2                      2.56k        1.28k  
+168_visual.blocks.23.mlp.Linear_fc1                    6.55872M      6.5536M  
+169_visual.blocks.23.mlp.QuickGELUActivation_act              -            -  
+170_visual.blocks.23.mlp.Linear_fc2                    6.55488M      6.5536M  
+171_visual.blocks.24.LayerNorm_norm1                      2.56k        1.28k  
+172_visual.blocks.24.attn.Linear_qkv                   4.91904M      4.9152M  
+173_visual.blocks.24.attn.Linear_proj                  1.63968M      1.6384M  
+174_visual.blocks.24.LayerNorm_norm2                      2.56k        1.28k  
+175_visual.blocks.24.mlp.Linear_fc1                    6.55872M      6.5536M  
+176_visual.blocks.24.mlp.QuickGELUActivation_act              -            -  
+177_visual.blocks.24.mlp.Linear_fc2                    6.55488M      6.5536M  
+178_visual.blocks.25.LayerNorm_norm1                      2.56k        1.28k  
+179_visual.blocks.25.attn.Linear_qkv                   4.91904M      4.9152M  
+180_visual.blocks.25.attn.Linear_proj                  1.63968M      1.6384M  
+181_visual.blocks.25.LayerNorm_norm2                      2.56k        1.28k  
+182_visual.blocks.25.mlp.Linear_fc1                    6.55872M      6.5536M  
+183_visual.blocks.25.mlp.QuickGELUActivation_act              -            -  
+184_visual.blocks.25.mlp.Linear_fc2                    6.55488M      6.5536M  
+185_visual.blocks.26.LayerNorm_norm1                      2.56k        1.28k  
+186_visual.blocks.26.attn.Linear_qkv                   4.91904M      4.9152M  
+187_visual.blocks.26.attn.Linear_proj                  1.63968M      1.6384M  
+188_visual.blocks.26.LayerNorm_norm2                      2.56k        1.28k  
+189_visual.blocks.26.mlp.Linear_fc1                    6.55872M      6.5536M  
+190_visual.blocks.26.mlp.QuickGELUActivation_act              -            -  
+191_visual.blocks.26.mlp.Linear_fc2                    6.55488M      6.5536M  
+192_visual.blocks.27.LayerNorm_norm1                      2.56k        1.28k  
+193_visual.blocks.27.attn.Linear_qkv                   4.91904M      4.9152M  
+194_visual.blocks.27.attn.Linear_proj                  1.63968M      1.6384M  
+195_visual.blocks.27.LayerNorm_norm2                      2.56k        1.28k  
+196_visual.blocks.27.mlp.Linear_fc1                    6.55872M      6.5536M  
+197_visual.blocks.27.mlp.QuickGELUActivation_act              -            -  
+198_visual.blocks.27.mlp.Linear_fc2                    6.55488M      6.5536M  
+199_visual.blocks.28.LayerNorm_norm1                      2.56k        1.28k  
+200_visual.blocks.28.attn.Linear_qkv                   4.91904M      4.9152M  
+201_visual.blocks.28.attn.Linear_proj                  1.63968M      1.6384M  
+202_visual.blocks.28.LayerNorm_norm2                      2.56k        1.28k  
+203_visual.blocks.28.mlp.Linear_fc1                    6.55872M      6.5536M  
+204_visual.blocks.28.mlp.QuickGELUActivation_act              -            -  
+205_visual.blocks.28.mlp.Linear_fc2                    6.55488M      6.5536M  
+206_visual.blocks.29.LayerNorm_norm1                      2.56k        1.28k  
+207_visual.blocks.29.attn.Linear_qkv                   4.91904M      4.9152M  
+208_visual.blocks.29.attn.Linear_proj                  1.63968M      1.6384M  
+209_visual.blocks.29.LayerNorm_norm2                      2.56k        1.28k  
+210_visual.blocks.29.mlp.Linear_fc1                    6.55872M      6.5536M  
+211_visual.blocks.29.mlp.QuickGELUActivation_act              -            -  
+212_visual.blocks.29.mlp.Linear_fc2                    6.55488M      6.5536M  
+213_visual.blocks.30.LayerNorm_norm1                      2.56k        1.28k  
+214_visual.blocks.30.attn.Linear_qkv                   4.91904M      4.9152M  
+215_visual.blocks.30.attn.Linear_proj                  1.63968M      1.6384M  
+216_visual.blocks.30.LayerNorm_norm2                      2.56k        1.28k  
+217_visual.blocks.30.mlp.Linear_fc1                    6.55872M      6.5536M  
+218_visual.blocks.30.mlp.QuickGELUActivation_act              -            -  
+219_visual.blocks.30.mlp.Linear_fc2                    6.55488M      6.5536M  
+220_visual.blocks.31.LayerNorm_norm1                      2.56k        1.28k  
+221_visual.blocks.31.attn.Linear_qkv                   4.91904M      4.9152M  
+222_visual.blocks.31.attn.Linear_proj                  1.63968M      1.6384M  
+223_visual.blocks.31.LayerNorm_norm2                      2.56k        1.28k  
+224_visual.blocks.31.mlp.Linear_fc1                    6.55872M      6.5536M  
+225_visual.blocks.31.mlp.QuickGELUActivation_act              -            -  
+226_visual.blocks.31.mlp.Linear_fc2                    6.55488M      6.5536M  
+227_visual.merger.LayerNorm_ln_q                          2.56k        1.28k  
+228_visual.merger.mlp.Linear_0                        26.21952M     26.2144M  
+229_visual.merger.mlp.GELU_1                                  -            -  
+230_visual.merger.mlp.Linear_2                       18.353664M    18.35008M  
+231_model.layers.0.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+232_model.layers.0.self_attn.Linear_q_proj            12.84864M   12.845056M  
+233_model.layers.0.self_attn.Linear_k_proj             1.83552M    1.835008M  
+234_model.layers.0.self_attn.Linear_v_proj             1.83552M    1.835008M  
+235_model.layers.0.self_attn.Qwen2RotaryEmbeddi...            -            -  
+236_model.layers.0.self_attn.Linear_o_proj           12.845056M   12.845056M  
+237_model.layers.0.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+238_model.layers.0.mlp.Linear_gate_proj              67.895296M   67.895296M  
+239_model.layers.0.mlp.SiLU_act_fn                            -            -  
+240_model.layers.0.mlp.Linear_up_proj                67.895296M   67.895296M  
+241_model.layers.0.mlp.Linear_down_proj              67.895296M   67.895296M  
+242_model.layers.1.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+243_model.layers.1.self_attn.Linear_q_proj            12.84864M   12.845056M  
+244_model.layers.1.self_attn.Linear_k_proj             1.83552M    1.835008M  
+245_model.layers.1.self_attn.Linear_v_proj             1.83552M    1.835008M  
+246_model.layers.1.self_attn.Qwen2RotaryEmbeddi...            -            -  
+247_model.layers.1.self_attn.Linear_o_proj           12.845056M   12.845056M  
+248_model.layers.1.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+249_model.layers.1.mlp.Linear_gate_proj              67.895296M   67.895296M  
+250_model.layers.1.mlp.SiLU_act_fn                            -            -  
+251_model.layers.1.mlp.Linear_up_proj                67.895296M   67.895296M  
+252_model.layers.1.mlp.Linear_down_proj              67.895296M   67.895296M  
+253_model.layers.2.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+254_model.layers.2.self_attn.Linear_q_proj            12.84864M   12.845056M  
+255_model.layers.2.self_attn.Linear_k_proj             1.83552M    1.835008M  
+256_model.layers.2.self_attn.Linear_v_proj             1.83552M    1.835008M  
+257_model.layers.2.self_attn.Qwen2RotaryEmbeddi...            -            -  
+258_model.layers.2.self_attn.Linear_o_proj           12.845056M   12.845056M  
+259_model.layers.2.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+260_model.layers.2.mlp.Linear_gate_proj              67.895296M   67.895296M  
+261_model.layers.2.mlp.SiLU_act_fn                            -            -  
+262_model.layers.2.mlp.Linear_up_proj                67.895296M   67.895296M  
+263_model.layers.2.mlp.Linear_down_proj              67.895296M   67.895296M  
+264_model.layers.3.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+265_model.layers.3.self_attn.Linear_q_proj            12.84864M   12.845056M  
+266_model.layers.3.self_attn.Linear_k_proj             1.83552M    1.835008M  
+267_model.layers.3.self_attn.Linear_v_proj             1.83552M    1.835008M  
+268_model.layers.3.self_attn.Qwen2RotaryEmbeddi...            -            -  
+269_model.layers.3.self_attn.Linear_o_proj           12.845056M   12.845056M  
+270_model.layers.3.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+271_model.layers.3.mlp.Linear_gate_proj              67.895296M   67.895296M  
+272_model.layers.3.mlp.SiLU_act_fn                            -            -  
+273_model.layers.3.mlp.Linear_up_proj                67.895296M   67.895296M  
+274_model.layers.3.mlp.Linear_down_proj              67.895296M   67.895296M  
+275_model.layers.4.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+276_model.layers.4.self_attn.Linear_q_proj            12.84864M   12.845056M  
+277_model.layers.4.self_attn.Linear_k_proj             1.83552M    1.835008M  
+278_model.layers.4.self_attn.Linear_v_proj             1.83552M    1.835008M  
+279_model.layers.4.self_attn.Qwen2RotaryEmbeddi...            -            -  
+280_model.layers.4.self_attn.Linear_o_proj           12.845056M   12.845056M  
+281_model.layers.4.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+282_model.layers.4.mlp.Linear_gate_proj              67.895296M   67.895296M  
+283_model.layers.4.mlp.SiLU_act_fn                            -            -  
+284_model.layers.4.mlp.Linear_up_proj                67.895296M   67.895296M  
+285_model.layers.4.mlp.Linear_down_proj              67.895296M   67.895296M  
+286_model.layers.5.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+287_model.layers.5.self_attn.Linear_q_proj            12.84864M   12.845056M  
+288_model.layers.5.self_attn.Linear_k_proj             1.83552M    1.835008M  
+289_model.layers.5.self_attn.Linear_v_proj             1.83552M    1.835008M  
+290_model.layers.5.self_attn.Qwen2RotaryEmbeddi...            -            -  
+291_model.layers.5.self_attn.Linear_o_proj           12.845056M   12.845056M  
+292_model.layers.5.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+293_model.layers.5.mlp.Linear_gate_proj              67.895296M   67.895296M  
+294_model.layers.5.mlp.SiLU_act_fn                            -            -  
+295_model.layers.5.mlp.Linear_up_proj                67.895296M   67.895296M  
+296_model.layers.5.mlp.Linear_down_proj              67.895296M   67.895296M  
+297_model.layers.6.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+298_model.layers.6.self_attn.Linear_q_proj            12.84864M   12.845056M  
+299_model.layers.6.self_attn.Linear_k_proj             1.83552M    1.835008M  
+300_model.layers.6.self_attn.Linear_v_proj             1.83552M    1.835008M  
+301_model.layers.6.self_attn.Qwen2RotaryEmbeddi...            -            -  
+302_model.layers.6.self_attn.Linear_o_proj           12.845056M   12.845056M  
+303_model.layers.6.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+304_model.layers.6.mlp.Linear_gate_proj              67.895296M   67.895296M  
+305_model.layers.6.mlp.SiLU_act_fn                            -            -  
+306_model.layers.6.mlp.Linear_up_proj                67.895296M   67.895296M  
+307_model.layers.6.mlp.Linear_down_proj              67.895296M   67.895296M  
+308_model.layers.7.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+309_model.layers.7.self_attn.Linear_q_proj            12.84864M   12.845056M  
+310_model.layers.7.self_attn.Linear_k_proj             1.83552M    1.835008M  
+311_model.layers.7.self_attn.Linear_v_proj             1.83552M    1.835008M  
+312_model.layers.7.self_attn.Qwen2RotaryEmbeddi...            -            -  
+313_model.layers.7.self_attn.Linear_o_proj           12.845056M   12.845056M  
+314_model.layers.7.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+315_model.layers.7.mlp.Linear_gate_proj              67.895296M   67.895296M  
+316_model.layers.7.mlp.SiLU_act_fn                            -            -  
+317_model.layers.7.mlp.Linear_up_proj                67.895296M   67.895296M  
+318_model.layers.7.mlp.Linear_down_proj              67.895296M   67.895296M  
+319_model.layers.8.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+320_model.layers.8.self_attn.Linear_q_proj            12.84864M   12.845056M  
+321_model.layers.8.self_attn.Linear_k_proj             1.83552M    1.835008M  
+322_model.layers.8.self_attn.Linear_v_proj             1.83552M    1.835008M  
+323_model.layers.8.self_attn.Qwen2RotaryEmbeddi...            -            -  
+324_model.layers.8.self_attn.Linear_o_proj           12.845056M   12.845056M  
+325_model.layers.8.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+326_model.layers.8.mlp.Linear_gate_proj              67.895296M   67.895296M  
+327_model.layers.8.mlp.SiLU_act_fn                            -            -  
+328_model.layers.8.mlp.Linear_up_proj                67.895296M   67.895296M  
+329_model.layers.8.mlp.Linear_down_proj              67.895296M   67.895296M  
+330_model.layers.9.Qwen2RMSNorm_input_layernorm          3.584k       3.584k  
+331_model.layers.9.self_attn.Linear_q_proj            12.84864M   12.845056M  
+332_model.layers.9.self_attn.Linear_k_proj             1.83552M    1.835008M  
+333_model.layers.9.self_attn.Linear_v_proj             1.83552M    1.835008M  
+334_model.layers.9.self_attn.Qwen2RotaryEmbeddi...            -            -  
+335_model.layers.9.self_attn.Linear_o_proj           12.845056M   12.845056M  
+336_model.layers.9.Qwen2RMSNorm_post_attention_...       3.584k       3.584k  
+337_model.layers.9.mlp.Linear_gate_proj              67.895296M   67.895296M  
+338_model.layers.9.mlp.SiLU_act_fn                            -            -  
+339_model.layers.9.mlp.Linear_up_proj                67.895296M   67.895296M  
+340_model.layers.9.mlp.Linear_down_proj              67.895296M   67.895296M  
+341_model.layers.10.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+342_model.layers.10.self_attn.Linear_q_proj           12.84864M   12.845056M  
+343_model.layers.10.self_attn.Linear_k_proj            1.83552M    1.835008M  
+344_model.layers.10.self_attn.Linear_v_proj            1.83552M    1.835008M  
+345_model.layers.10.self_attn.Qwen2RotaryEmbedd...            -            -  
+346_model.layers.10.self_attn.Linear_o_proj          12.845056M   12.845056M  
+347_model.layers.10.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+348_model.layers.10.mlp.Linear_gate_proj             67.895296M   67.895296M  
+349_model.layers.10.mlp.SiLU_act_fn                           -            -  
+350_model.layers.10.mlp.Linear_up_proj               67.895296M   67.895296M  
+351_model.layers.10.mlp.Linear_down_proj             67.895296M   67.895296M  
+352_model.layers.11.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+353_model.layers.11.self_attn.Linear_q_proj           12.84864M   12.845056M  
+354_model.layers.11.self_attn.Linear_k_proj            1.83552M    1.835008M  
+355_model.layers.11.self_attn.Linear_v_proj            1.83552M    1.835008M  
+356_model.layers.11.self_attn.Qwen2RotaryEmbedd...            -            -  
+357_model.layers.11.self_attn.Linear_o_proj          12.845056M   12.845056M  
+358_model.layers.11.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+359_model.layers.11.mlp.Linear_gate_proj             67.895296M   67.895296M  
+360_model.layers.11.mlp.SiLU_act_fn                           -            -  
+361_model.layers.11.mlp.Linear_up_proj               67.895296M   67.895296M  
+362_model.layers.11.mlp.Linear_down_proj             67.895296M   67.895296M  
+363_model.layers.12.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+364_model.layers.12.self_attn.Linear_q_proj           12.84864M   12.845056M  
+365_model.layers.12.self_attn.Linear_k_proj            1.83552M    1.835008M  
+366_model.layers.12.self_attn.Linear_v_proj            1.83552M    1.835008M  
+367_model.layers.12.self_attn.Qwen2RotaryEmbedd...            -            -  
+368_model.layers.12.self_attn.Linear_o_proj          12.845056M   12.845056M  
+369_model.layers.12.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+370_model.layers.12.mlp.Linear_gate_proj             67.895296M   67.895296M  
+371_model.layers.12.mlp.SiLU_act_fn                           -            -  
+372_model.layers.12.mlp.Linear_up_proj               67.895296M   67.895296M  
+373_model.layers.12.mlp.Linear_down_proj             67.895296M   67.895296M  
+374_model.layers.13.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+375_model.layers.13.self_attn.Linear_q_proj           12.84864M   12.845056M  
+376_model.layers.13.self_attn.Linear_k_proj            1.83552M    1.835008M  
+377_model.layers.13.self_attn.Linear_v_proj            1.83552M    1.835008M  
+378_model.layers.13.self_attn.Qwen2RotaryEmbedd...            -            -  
+379_model.layers.13.self_attn.Linear_o_proj          12.845056M   12.845056M  
+380_model.layers.13.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+381_model.layers.13.mlp.Linear_gate_proj             67.895296M   67.895296M  
+382_model.layers.13.mlp.SiLU_act_fn                           -            -  
+383_model.layers.13.mlp.Linear_up_proj               67.895296M   67.895296M  
+384_model.layers.13.mlp.Linear_down_proj             67.895296M   67.895296M  
+385_model.layers.14.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+386_model.layers.14.self_attn.Linear_q_proj           12.84864M   12.845056M  
+387_model.layers.14.self_attn.Linear_k_proj            1.83552M    1.835008M  
+388_model.layers.14.self_attn.Linear_v_proj            1.83552M    1.835008M  
+389_model.layers.14.self_attn.Qwen2RotaryEmbedd...            -            -  
+390_model.layers.14.self_attn.Linear_o_proj          12.845056M   12.845056M  
+391_model.layers.14.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+392_model.layers.14.mlp.Linear_gate_proj             67.895296M   67.895296M  
+393_model.layers.14.mlp.SiLU_act_fn                           -            -  
+394_model.layers.14.mlp.Linear_up_proj               67.895296M   67.895296M  
+395_model.layers.14.mlp.Linear_down_proj             67.895296M   67.895296M  
+396_model.layers.15.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+397_model.layers.15.self_attn.Linear_q_proj           12.84864M   12.845056M  
+398_model.layers.15.self_attn.Linear_k_proj            1.83552M    1.835008M  
+399_model.layers.15.self_attn.Linear_v_proj            1.83552M    1.835008M  
+400_model.layers.15.self_attn.Qwen2RotaryEmbedd...            -            -  
+401_model.layers.15.self_attn.Linear_o_proj          12.845056M   12.845056M  
+402_model.layers.15.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+403_model.layers.15.mlp.Linear_gate_proj             67.895296M   67.895296M  
+404_model.layers.15.mlp.SiLU_act_fn                           -            -  
+405_model.layers.15.mlp.Linear_up_proj               67.895296M   67.895296M  
+406_model.layers.15.mlp.Linear_down_proj             67.895296M   67.895296M  
+407_model.layers.16.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+408_model.layers.16.self_attn.Linear_q_proj           12.84864M   12.845056M  
+409_model.layers.16.self_attn.Linear_k_proj            1.83552M    1.835008M  
+410_model.layers.16.self_attn.Linear_v_proj            1.83552M    1.835008M  
+411_model.layers.16.self_attn.Qwen2RotaryEmbedd...            -            -  
+412_model.layers.16.self_attn.Linear_o_proj          12.845056M   12.845056M  
+413_model.layers.16.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+414_model.layers.16.mlp.Linear_gate_proj             67.895296M   67.895296M  
+415_model.layers.16.mlp.SiLU_act_fn                           -            -  
+416_model.layers.16.mlp.Linear_up_proj               67.895296M   67.895296M  
+417_model.layers.16.mlp.Linear_down_proj             67.895296M   67.895296M  
+418_model.layers.17.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+419_model.layers.17.self_attn.Linear_q_proj           12.84864M   12.845056M  
+420_model.layers.17.self_attn.Linear_k_proj            1.83552M    1.835008M  
+421_model.layers.17.self_attn.Linear_v_proj            1.83552M    1.835008M  
+422_model.layers.17.self_attn.Qwen2RotaryEmbedd...            -            -  
+423_model.layers.17.self_attn.Linear_o_proj          12.845056M   12.845056M  
+424_model.layers.17.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+425_model.layers.17.mlp.Linear_gate_proj             67.895296M   67.895296M  
+426_model.layers.17.mlp.SiLU_act_fn                           -            -  
+427_model.layers.17.mlp.Linear_up_proj               67.895296M   67.895296M  
+428_model.layers.17.mlp.Linear_down_proj             67.895296M   67.895296M  
+429_model.layers.18.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+430_model.layers.18.self_attn.Linear_q_proj           12.84864M   12.845056M  
+431_model.layers.18.self_attn.Linear_k_proj            1.83552M    1.835008M  
+432_model.layers.18.self_attn.Linear_v_proj            1.83552M    1.835008M  
+433_model.layers.18.self_attn.Qwen2RotaryEmbedd...            -            -  
+434_model.layers.18.self_attn.Linear_o_proj          12.845056M   12.845056M  
+435_model.layers.18.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+436_model.layers.18.mlp.Linear_gate_proj             67.895296M   67.895296M  
+437_model.layers.18.mlp.SiLU_act_fn                           -            -  
+438_model.layers.18.mlp.Linear_up_proj               67.895296M   67.895296M  
+439_model.layers.18.mlp.Linear_down_proj             67.895296M   67.895296M  
+440_model.layers.19.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+441_model.layers.19.self_attn.Linear_q_proj           12.84864M   12.845056M  
+442_model.layers.19.self_attn.Linear_k_proj            1.83552M    1.835008M  
+443_model.layers.19.self_attn.Linear_v_proj            1.83552M    1.835008M  
+444_model.layers.19.self_attn.Qwen2RotaryEmbedd...            -            -  
+445_model.layers.19.self_attn.Linear_o_proj          12.845056M   12.845056M  
+446_model.layers.19.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+447_model.layers.19.mlp.Linear_gate_proj             67.895296M   67.895296M  
+448_model.layers.19.mlp.SiLU_act_fn                           -            -  
+449_model.layers.19.mlp.Linear_up_proj               67.895296M   67.895296M  
+450_model.layers.19.mlp.Linear_down_proj             67.895296M   67.895296M  
+451_model.layers.20.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+452_model.layers.20.self_attn.Linear_q_proj           12.84864M   12.845056M  
+453_model.layers.20.self_attn.Linear_k_proj            1.83552M    1.835008M  
+454_model.layers.20.self_attn.Linear_v_proj            1.83552M    1.835008M  
+455_model.layers.20.self_attn.Qwen2RotaryEmbedd...            -            -  
+456_model.layers.20.self_attn.Linear_o_proj          12.845056M   12.845056M  
+457_model.layers.20.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+458_model.layers.20.mlp.Linear_gate_proj             67.895296M   67.895296M  
+459_model.layers.20.mlp.SiLU_act_fn                           -            -  
+460_model.layers.20.mlp.Linear_up_proj               67.895296M   67.895296M  
+461_model.layers.20.mlp.Linear_down_proj             67.895296M   67.895296M  
+462_model.layers.21.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+463_model.layers.21.self_attn.Linear_q_proj           12.84864M   12.845056M  
+464_model.layers.21.self_attn.Linear_k_proj            1.83552M    1.835008M  
+465_model.layers.21.self_attn.Linear_v_proj            1.83552M    1.835008M  
+466_model.layers.21.self_attn.Qwen2RotaryEmbedd...            -            -  
+467_model.layers.21.self_attn.Linear_o_proj          12.845056M   12.845056M  
+468_model.layers.21.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+469_model.layers.21.mlp.Linear_gate_proj             67.895296M   67.895296M  
+470_model.layers.21.mlp.SiLU_act_fn                           -            -  
+471_model.layers.21.mlp.Linear_up_proj               67.895296M   67.895296M  
+472_model.layers.21.mlp.Linear_down_proj             67.895296M   67.895296M  
+473_model.layers.22.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+474_model.layers.22.self_attn.Linear_q_proj           12.84864M   12.845056M  
+475_model.layers.22.self_attn.Linear_k_proj            1.83552M    1.835008M  
+476_model.layers.22.self_attn.Linear_v_proj            1.83552M    1.835008M  
+477_model.layers.22.self_attn.Qwen2RotaryEmbedd...            -            -  
+478_model.layers.22.self_attn.Linear_o_proj          12.845056M   12.845056M  
+479_model.layers.22.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+480_model.layers.22.mlp.Linear_gate_proj             67.895296M   67.895296M  
+481_model.layers.22.mlp.SiLU_act_fn                           -            -  
+482_model.layers.22.mlp.Linear_up_proj               67.895296M   67.895296M  
+483_model.layers.22.mlp.Linear_down_proj             67.895296M   67.895296M  
+484_model.layers.23.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+485_model.layers.23.self_attn.Linear_q_proj           12.84864M   12.845056M  
+486_model.layers.23.self_attn.Linear_k_proj            1.83552M    1.835008M  
+487_model.layers.23.self_attn.Linear_v_proj            1.83552M    1.835008M  
+488_model.layers.23.self_attn.Qwen2RotaryEmbedd...            -            -  
+489_model.layers.23.self_attn.Linear_o_proj          12.845056M   12.845056M  
+490_model.layers.23.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+491_model.layers.23.mlp.Linear_gate_proj             67.895296M   67.895296M  
+492_model.layers.23.mlp.SiLU_act_fn                           -            -  
+493_model.layers.23.mlp.Linear_up_proj               67.895296M   67.895296M  
+494_model.layers.23.mlp.Linear_down_proj             67.895296M   67.895296M  
+495_model.layers.24.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+496_model.layers.24.self_attn.Linear_q_proj           12.84864M   12.845056M  
+497_model.layers.24.self_attn.Linear_k_proj            1.83552M    1.835008M  
+498_model.layers.24.self_attn.Linear_v_proj            1.83552M    1.835008M  
+499_model.layers.24.self_attn.Qwen2RotaryEmbedd...            -            -  
+500_model.layers.24.self_attn.Linear_o_proj          12.845056M   12.845056M  
+501_model.layers.24.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+502_model.layers.24.mlp.Linear_gate_proj             67.895296M   67.895296M  
+503_model.layers.24.mlp.SiLU_act_fn                           -            -  
+504_model.layers.24.mlp.Linear_up_proj               67.895296M   67.895296M  
+505_model.layers.24.mlp.Linear_down_proj             67.895296M   67.895296M  
+506_model.layers.25.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+507_model.layers.25.self_attn.Linear_q_proj           12.84864M   12.845056M  
+508_model.layers.25.self_attn.Linear_k_proj            1.83552M    1.835008M  
+509_model.layers.25.self_attn.Linear_v_proj            1.83552M    1.835008M  
+510_model.layers.25.self_attn.Qwen2RotaryEmbedd...            -            -  
+511_model.layers.25.self_attn.Linear_o_proj          12.845056M   12.845056M  
+512_model.layers.25.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+513_model.layers.25.mlp.Linear_gate_proj             67.895296M   67.895296M  
+514_model.layers.25.mlp.SiLU_act_fn                           -            -  
+515_model.layers.25.mlp.Linear_up_proj               67.895296M   67.895296M  
+516_model.layers.25.mlp.Linear_down_proj             67.895296M   67.895296M  
+517_model.layers.26.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+518_model.layers.26.self_attn.Linear_q_proj           12.84864M   12.845056M  
+519_model.layers.26.self_attn.Linear_k_proj            1.83552M    1.835008M  
+520_model.layers.26.self_attn.Linear_v_proj            1.83552M    1.835008M  
+521_model.layers.26.self_attn.Qwen2RotaryEmbedd...            -            -  
+522_model.layers.26.self_attn.Linear_o_proj          12.845056M   12.845056M  
+523_model.layers.26.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+524_model.layers.26.mlp.Linear_gate_proj             67.895296M   67.895296M  
+525_model.layers.26.mlp.SiLU_act_fn                           -            -  
+526_model.layers.26.mlp.Linear_up_proj               67.895296M   67.895296M  
+527_model.layers.26.mlp.Linear_down_proj             67.895296M   67.895296M  
+528_model.layers.27.Qwen2RMSNorm_input_layernorm         3.584k       3.584k  
+529_model.layers.27.self_attn.Linear_q_proj           12.84864M   12.845056M  
+530_model.layers.27.self_attn.Linear_k_proj            1.83552M    1.835008M  
+531_model.layers.27.self_attn.Linear_v_proj            1.83552M    1.835008M  
+532_model.layers.27.self_attn.Qwen2RotaryEmbedd...            -            -  
+533_model.layers.27.self_attn.Linear_o_proj          12.845056M   12.845056M  
+534_model.layers.27.Qwen2RMSNorm_post_attention...       3.584k       3.584k  
+535_model.layers.27.mlp.Linear_gate_proj             67.895296M   67.895296M  
+536_model.layers.27.mlp.SiLU_act_fn                           -            -  
+537_model.layers.27.mlp.Linear_up_proj               67.895296M   67.895296M  
+538_model.layers.27.mlp.Linear_down_proj             67.895296M   67.895296M  
+539_model.Qwen2RMSNorm_norm                              3.584k       3.584k  
+540_lm_head                                         544.997376M  544.997376M  
+------------------------------------------------------------------------------------------------------------------------------------
+                            Totals
+Total params          8.291375616G
+Trainable params      8.291375616G
+Non-trainable params           0.0
+Mult-Adds             8.290786048G
+====================================================================================================================================

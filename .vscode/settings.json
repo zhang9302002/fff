@@ -1,0 +1,10 @@
+{
+    "python.analysis.exclude": [
+        "ckpt**/**",
+        "data**/**",
+        "logs**/**",
+    ],
+    "files.exclude": {
+        "**/your_folder_to_exclude/**": true
+    }
+}

@@ -1,0 +1,203 @@
+{
+    "13_0": [
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 10
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: What is the overarching theme of the video, considering the activities performed by both characters?\n(A) The overarching central theme presented in the video is that individuals can be both sociable and independent simultaneously. the visual content demonstrates that it is entirely possible to be both connected to others meaningfully and to savor solitary moments, emphasizing that it is crucial to find a harmonious balance between these two aspects.\n(B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.\n(C) The primary, overarching theme presented in the video emphasizes that individuals can truly be both creative and practical simultaneously. the enlightening video demonstrates the realistic possibility of being both highly imaginative and remarkably efficient, while stressing the significance of discovering an equilibrium between these two essential aspects.\n(D) The overarching theme of the video is that people can be both ambitious and humble. the video shows that it is possible to be both driven and modest, and that it is important to find a balance between the two.\n(E) The primary overarching theme presented in the video is that individuals can simultaneously possess and exhibit both intelligence and emotional aspects. effectively, the video demonstrates that the coexistence of rational and intuitive qualities is feasible, emphasizing the significance of establishing equilibrium between these two crucial elements.\nOnly give the best option.",
+                "a": 1,
+                "pred": "B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 20
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: What is the overarching theme of the video, considering the activities performed by both characters?\n(A) The overarching central theme presented in the video is that individuals can be both sociable and independent simultaneously. the visual content demonstrates that it is entirely possible to be both connected to others meaningfully and to savor solitary moments, emphasizing that it is crucial to find a harmonious balance between these two aspects.\n(B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.\n(C) The primary, overarching theme presented in the video emphasizes that individuals can truly be both creative and practical simultaneously. the enlightening video demonstrates the realistic possibility of being both highly imaginative and remarkably efficient, while stressing the significance of discovering an equilibrium between these two essential aspects.\n(D) The overarching theme of the video is that people can be both ambitious and humble. the video shows that it is possible to be both driven and modest, and that it is important to find a balance between the two.\n(E) The primary overarching theme presented in the video is that individuals can simultaneously possess and exhibit both intelligence and emotional aspects. effectively, the video demonstrates that the coexistence of rational and intuitive qualities is feasible, emphasizing the significance of establishing equilibrium between these two crucial elements.\nOnly give the best option.",
+                "a": 1,
+                "pred": "B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 40
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: What is the overarching theme of the video, considering the activities performed by both characters?\n(A) The overarching central theme presented in the video is that individuals can be both sociable and independent simultaneously. the visual content demonstrates that it is entirely possible to be both connected to others meaningfully and to savor solitary moments, emphasizing that it is crucial to find a harmonious balance between these two aspects.\n(B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.\n(C) The primary, overarching theme presented in the video emphasizes that individuals can truly be both creative and practical simultaneously. the enlightening video demonstrates the realistic possibility of being both highly imaginative and remarkably efficient, while stressing the significance of discovering an equilibrium between these two essential aspects.\n(D) The overarching theme of the video is that people can be both ambitious and humble. the video shows that it is possible to be both driven and modest, and that it is important to find a balance between the two.\n(E) The primary overarching theme presented in the video is that individuals can simultaneously possess and exhibit both intelligence and emotional aspects. effectively, the video demonstrates that the coexistence of rational and intuitive qualities is feasible, emphasizing the significance of establishing equilibrium between these two crucial elements.\nOnly give the best option.",
+                "a": 1,
+                "pred": "B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "no",
+                "score": 3,
+                "frames": 90
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: What is the overarching theme of the video, considering the activities performed by both characters?\n(A) The overarching central theme presented in the video is that individuals can be both sociable and independent simultaneously. the visual content demonstrates that it is entirely possible to be both connected to others meaningfully and to savor solitary moments, emphasizing that it is crucial to find a harmonious balance between these two aspects.\n(B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.\n(C) The primary, overarching theme presented in the video emphasizes that individuals can truly be both creative and practical simultaneously. the enlightening video demonstrates the realistic possibility of being both highly imaginative and remarkably efficient, while stressing the significance of discovering an equilibrium between these two essential aspects.\n(D) The overarching theme of the video is that people can be both ambitious and humble. the video shows that it is possible to be both driven and modest, and that it is important to find a balance between the two.\n(E) The primary overarching theme presented in the video is that individuals can simultaneously possess and exhibit both intelligence and emotional aspects. effectively, the video demonstrates that the coexistence of rational and intuitive qualities is feasible, emphasizing the significance of establishing equilibrium between these two crucial elements.\nOnly give the best option.",
+                "a": 1,
+                "pred": "A) The overarching central theme presented in the video is that individuals can be both sociable and independent simultaneously. the visual content demonstrates that it is entirely possible to be both connected to others meaningfully and to savor solitary moments, emphasizing that it is crucial to find a harmonious balance between these two aspects.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "no",
+                "score": 3,
+                "frames": 180
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: What is the overarching theme of the video, considering the activities performed by both characters?\n(A) The overarching central theme presented in the video is that individuals can be both sociable and independent simultaneously. the visual content demonstrates that it is entirely possible to be both connected to others meaningfully and to savor solitary moments, emphasizing that it is crucial to find a harmonious balance between these two aspects.\n(B) The overarching theme of the video is that people can be both engaged in challenging activities and enjoying leisurely activities at the same time. the video shows that it is possible to be both productive and relaxed, and that it is important to find a balance between the two.\n(C) The primary, overarching theme presented in the video emphasizes that individuals can truly be both creative and practical simultaneously. the enlightening video demonstrates the realistic possibility of being both highly imaginative and remarkably efficient, while stressing the significance of discovering an equilibrium between these two essential aspects.\n(D) The overarching theme of the video is that people can be both ambitious and humble. the video shows that it is possible to be both driven and modest, and that it is important to find a balance between the two.\n(E) The primary overarching theme presented in the video is that individuals can simultaneously possess and exhibit both intelligence and emotional aspects. effectively, the video demonstrates that the coexistence of rational and intuitive qualities is feasible, emphasizing the significance of establishing equilibrium between these two crucial elements.\nOnly give the best option.",
+                "a": 1,
+                "pred": "A) The overarching central theme presented in the video is that individuals can be both sociable and independent simultaneously. the visual content demonstrates that it is entirely possible to be both connected to others meaningfully and to savor solitary moments, emphasizing that it is crucial to find a harmonious balance between these two aspects.",
+                "a_type": null
+            }
+        ]
+    ],
+    "1574_0": [
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 10
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Based on c's actions, what is the significance of the wooden crates and the blocks with respect to the fork lift's involvement in the video?\n(A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.\n(B) The wooden crates and the blocks are used to build a structure. the blocks are stacked on top of each other to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(C) The wooden crates and the blocks are used to create a barrier. the blocks are stacked in front of the wooden crates to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(D) The wooden crates and the blocks are used to create a display. the blocks are stacked on top of each other to create a pyramid. the fork lift is used to move the wooden crates and the blocks into position.\n(E) The wooden crates and the blocks are used to create a sculpture. the blocks are stacked in a variety of shapes to create a work of art. the fork lift is used to move the wooden crates and the blocks into position.\nOnly give the best option.",
+                "a": 0,
+                "pred": "A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 20
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Based on c's actions, what is the significance of the wooden crates and the blocks with respect to the fork lift's involvement in the video?\n(A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.\n(B) The wooden crates and the blocks are used to build a structure. the blocks are stacked on top of each other to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(C) The wooden crates and the blocks are used to create a barrier. the blocks are stacked in front of the wooden crates to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(D) The wooden crates and the blocks are used to create a display. the blocks are stacked on top of each other to create a pyramid. the fork lift is used to move the wooden crates and the blocks into position.\n(E) The wooden crates and the blocks are used to create a sculpture. the blocks are stacked in a variety of shapes to create a work of art. the fork lift is used to move the wooden crates and the blocks into position.\nOnly give the best option.",
+                "a": 0,
+                "pred": "A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 40
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Based on c's actions, what is the significance of the wooden crates and the blocks with respect to the fork lift's involvement in the video?\n(A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.\n(B) The wooden crates and the blocks are used to build a structure. the blocks are stacked on top of each other to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(C) The wooden crates and the blocks are used to create a barrier. the blocks are stacked in front of the wooden crates to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(D) The wooden crates and the blocks are used to create a display. the blocks are stacked on top of each other to create a pyramid. the fork lift is used to move the wooden crates and the blocks into position.\n(E) The wooden crates and the blocks are used to create a sculpture. the blocks are stacked in a variety of shapes to create a work of art. the fork lift is used to move the wooden crates and the blocks into position.\nOnly give the best option.",
+                "a": 0,
+                "pred": "A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "no",
+                "score": 3,
+                "frames": 90
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Based on c's actions, what is the significance of the wooden crates and the blocks with respect to the fork lift's involvement in the video?\n(A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.\n(B) The wooden crates and the blocks are used to build a structure. the blocks are stacked on top of each other to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(C) The wooden crates and the blocks are used to create a barrier. the blocks are stacked in front of the wooden crates to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(D) The wooden crates and the blocks are used to create a display. the blocks are stacked on top of each other to create a pyramid. the fork lift is used to move the wooden crates and the blocks into position.\n(E) The wooden crates and the blocks are used to create a sculpture. the blocks are stacked in a variety of shapes to create a work of art. the fork lift is used to move the wooden crates and the blocks into position.\nOnly give the best option.",
+                "a": 0,
+                "pred": "B) The wooden crates and the blocks are used to build a structure. the blocks are stacked on top of each other to create a wall. the fork lift is used to move the wooden crates and the blocks into position.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "no",
+                "score": 3,
+                "frames": 180
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Based on c's actions, what is the significance of the wooden crates and the blocks with respect to the fork lift's involvement in the video?\n(A) The wooden crates and the blocks are used to transport the bricks. the bricks are placed on the wooden crates and then stacked on top of each other. the fork lift is used to move the wooden crates and the bricks.\n(B) The wooden crates and the blocks are used to build a structure. the blocks are stacked on top of each other to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(C) The wooden crates and the blocks are used to create a barrier. the blocks are stacked in front of the wooden crates to create a wall. the fork lift is used to move the wooden crates and the blocks into position.\n(D) The wooden crates and the blocks are used to create a display. the blocks are stacked on top of each other to create a pyramid. the fork lift is used to move the wooden crates and the blocks into position.\n(E) The wooden crates and the blocks are used to create a sculpture. the blocks are stacked in a variety of shapes to create a work of art. the fork lift is used to move the wooden crates and the blocks into position.\nOnly give the best option.",
+                "a": 0,
+                "pred": "B) The wooden crates and the blocks are used to build a structure. the blocks are stacked on top of each other to create a wall. the fork lift is used to move the wooden crates and the blocks into position.",
+                "a_type": null
+            }
+        ]
+    ],
+    "1887_0": [
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 10
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Analyzing the video, what can you deduce c’s main objective is in this sequence of events? provide a summary of the process.\n(A) C's main objective is to clean the truck.\n(B) C's main objective is to fix the hose.\n(C) C's main objective is to water the lawn.\n(D) C's main objective is to take a picture of the lawn.\n(E) C's main objective is to get in the truck.\nOnly give the best option.",
+                "a": 2,
+                "pred": "C) C's main objective is to water the lawn.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "yes",
+                "score": 3,
+                "frames": 20
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Analyzing the video, what can you deduce c’s main objective is in this sequence of events? provide a summary of the process.\n(A) C's main objective is to clean the truck.\n(B) C's main objective is to fix the hose.\n(C) C's main objective is to water the lawn.\n(D) C's main objective is to take a picture of the lawn.\n(E) C's main objective is to get in the truck.\nOnly give the best option.",
+                "a": 2,
+                "pred": "C) C's main objective is to water the lawn.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "no",
+                "score": 3,
+                "frames": 40
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Analyzing the video, what can you deduce c’s main objective is in this sequence of events? provide a summary of the process.\n(A) C's main objective is to clean the truck.\n(B) C's main objective is to fix the hose.\n(C) C's main objective is to water the lawn.\n(D) C's main objective is to take a picture of the lawn.\n(E) C's main objective is to get in the truck.\nOnly give the best option.",
+                "a": 2,
+                "pred": "B) C's main objective is to fix the hose.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "no",
+                "score": 3,
+                "frames": 90
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Analyzing the video, what can you deduce c’s main objective is in this sequence of events? provide a summary of the process.\n(A) C's main objective is to clean the truck.\n(B) C's main objective is to fix the hose.\n(C) C's main objective is to water the lawn.\n(D) C's main objective is to take a picture of the lawn.\n(E) C's main objective is to get in the truck.\nOnly give the best option.",
+                "a": 2,
+                "pred": "B) C's main objective is to fix the hose.",
+                "a_type": null
+            }
+        ],
+        [
+            {
+                "pred": "no",
+                "score": 3,
+                "frames": 180
+            },
+            {
+                "q": "Select the best answer to the following multiple-choice question based on the egocentric video.\nQuestion: Analyzing the video, what can you deduce c’s main objective is in this sequence of events? provide a summary of the process.\n(A) C's main objective is to clean the truck.\n(B) C's main objective is to fix the hose.\n(C) C's main objective is to water the lawn.\n(D) C's main objective is to take a picture of the lawn.\n(E) C's main objective is to get in the truck.\nOnly give the best option.",
+                "a": 2,
+                "pred": "B) C's main objective is to fix the hose.",
+                "a_type": null
+            }
+        ]
+    ]
+}

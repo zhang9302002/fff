@@ -1,0 +1,10 @@
+ckpt**/
+data**/
+data_link
+logs**/
+old**/
+output**/
+*.log
+*.zip
+assets
+paper_utils
