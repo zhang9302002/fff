@@ -6,5 +6,6 @@ old**/
 output**/
 *.log
 *.zip
+*.whl
 assets
 paper_utils

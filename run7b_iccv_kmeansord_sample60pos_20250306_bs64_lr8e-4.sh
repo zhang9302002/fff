@@ -2,9 +2,9 @@
 # !/bin/bash
 set -x
 
-source  /mnt/bn/fasterlmm/mlx/workspace/activate.sh
-conda activate vstream
-cd /mnt/bn/fasterlmmlq/workspace/Flash-VStream-Qwen2
+# source  /mnt/bn/fasterlmm/mlx/workspace/activate.sh
+# conda activate vstream
+# cd /mnt/bn/fasterlmmlq/workspace/Flash-VStream-Qwen2
 
 maxlen=14000
 ngpus=8
@@ -92,11 +92,10 @@ if [ $DO_EVAL -eq 1 ]; then
                 --model-path ${SAVE_PATH} \
                 --dataset ${dataset} \
                 --output_dir ${SAVE_PATH} \
-                --evaluation_name evaluation_${suffix} \
+                --evaluation_name evaluation_${suffix}_test0515 \
                 --num_chunks ${ngpus} \
                 --max_frames ${max_frames} \
                 --max_pixels ${max_pixels} \
-                --test \
                 >> "${SAVE_PATH}/${DATE}_qwen2vl-7b-eval-${dataset}_${suffix}.log" 2>&1 
         done
     done
